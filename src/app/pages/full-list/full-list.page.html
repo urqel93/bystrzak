@@ -1,1 +1,9 @@
-gad dejm
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="0.5%" fxLayoutAlign="center" >
+  <div *ngFor="let c of users" class="basic-card">
+    <basic-card
+      [title]="c.name"
+      [subtitle]="c.username"
+      [content]="c.website">
+    </basic-card>
+  </div>
+</div>
