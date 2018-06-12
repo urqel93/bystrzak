@@ -7,11 +7,13 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class BasicCardComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
+
   @Input() title: string;
   @Input() subtitle: string;
   @Input() content: string;
-
+  @Input() id: number;
 
   ngOnInit() {
   }

@@ -7,10 +7,12 @@ import {ComponentsModule} from "../components/components.module";
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {MatCardModule, MatIconModule} from "@angular/material";
 import {HttpClientModule} from "@angular/common/http";
+import {DetailsPage} from "./details/details.page";
 
 export const appRoutes: Routes = [
   {path: 'lista', component: FullListPage},
   {path: '', component: MainPage},
+  {path: 'lista/detale/:id', component: DetailsPage},
 
 ];
 
@@ -26,11 +28,13 @@ export const appRoutes: Routes = [
   ],
   declarations: [
     FullListPage,
-    MainPage
+    MainPage,
+    DetailsPage
   ],
   exports: [
     FullListPage,
-    MainPage
+    MainPage,
+    DetailsPage
   ]
 })
 

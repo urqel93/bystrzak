@@ -1,9 +1,10 @@
-<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="0.5%" fxLayoutAlign="center" >
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="0.5%" fxLayoutAlign="center">
   <div *ngFor="let c of users" class="basic-card">
     <basic-card
       [title]="c.name"
       [subtitle]="c.username"
-      [content]="c.website">
+      [content]="c.website"
+      [id]="c.id">
     </basic-card>
   </div>
 </div>
